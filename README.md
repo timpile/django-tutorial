@@ -20,3 +20,10 @@ From the root of this directory:
   - Follow the instruction for [hooking direnv into your shell](https://github.com/direnv/direnv#bash)
   - Copy `.envrc.example` and paste it as `.envrc` at the same directory level
   - Run `direnv allow .`
+
+
+## Database setup
+
+- Install postgres `pip install psycopg2`
+- Create database `psql -U postgres` -> `CREATE DATABASE django_tutorial;`
+- `python manage.py migrate`
